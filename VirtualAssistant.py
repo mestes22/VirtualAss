@@ -1,4 +1,14 @@
-import speech_recognition as sr
+# from WeatherOutput import *
+from GoogleSearch import *
 from AudioInput import *
 
-print(audio_input())
+#Runs untill the user says quit
+while True:
+    command = audio_input()
+    print(command)
+    if command:
+        if 'google' in command.lower():
+            print(command)
+            search(command)
+        if 'quit' in command:
+            break
