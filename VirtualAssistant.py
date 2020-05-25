@@ -1,2 +1,4 @@
 import speech_recognition as sr
-print('Hello')
+from AudioInput import *
+
+print(audio_input())
